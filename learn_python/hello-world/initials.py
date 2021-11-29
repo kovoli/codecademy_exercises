@@ -1,0 +1,27 @@
+# Oliver Kolesnikov
+# I like Coding
+
+
+print("  OOO   K    K ")
+print(" O   O  K   K  ")
+print(" O   O  K  K   ")
+print(" O   O  K K    ")
+print(" O   O  K  K   ")
+print(" O   O  K   K  ")
+print("  OOO   K    K ")
+print('----------')
+print(' ','O','O','O',' ')
+print('O',' ',' ',' ','O')
+print('O',' ',' ',' ','O')
+print('O',' ',' ',' ','O')
+print('O',' ',' ',' ','O')
+print('O',' ',' ',' ','O')
+print(' ','O','O','O',' ')
+print('---------')
+print('K',' ',' ',' ','K')
+print('K',' ',' ','K',' ')
+print('K',' ','K',' ',' ')
+print('K','K',' ',' ',' ')
+print('K',' ','K',' ',' ')
+print('K',' ',' ','K',' ')
+print('K',' ',' ',' ','K')
