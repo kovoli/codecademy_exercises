@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="application/javascript">
+    // Function Declarations
+    /*
+    greetWorld(); // Output: Hello, World!
+
+    function greetWorld() {
+      console.log('Hello, World!');
+    }
+    */
+    function getReminder() {
+      console.log('Water the plants.')
+    }
+    function greetInSpanish() {
+      console.log('Buenas Tardes.')
+    }
+
+    // Calling a Function
+
+    function sayThanks() {
+        console.log('Thank you for your purchase! We appreciate your business.');
+    }
+    sayThanks();
+    sayThanks();
+    sayThanks();
+
+    // Parameters and Arguments
+
+    function sayThanks(name) {
+      console.log('Thank you for your purchase '+ name + '! We appreciate your business.');
+    }
+
+    sayThanks('Cole')
+
+    // Default Parameters
+
+    function greeting (name = 'stranger') {
+      console.log(`Hello, ${name}!`)
+    }
+
+    greeting('Nick') // Output: Hello, Nick!
+    greeting() // Output: Hello, stranger!
+
+
+</script>
+</body>
+</html>
