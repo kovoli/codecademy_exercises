@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function getSleepHours(day) {
+    if ('Monday' === day) {
+        return 8
+    } else if ('Thuesday' === day) {
+        return 7
+    } else if ('Wednesday' === day) {
+        return 5
+    } else if ('Thursday' === day) {
+        return 6
+    } else if ('Friday' === day) {
+        return 9
+    } else if ('Saturday' === day) {
+        return 8
+    } else if ('Sunday' === day) {
+        return 8
+    }
+}
+function getActualSleepHours() {
+    let sum_of_all = (getSleepHours('Monday') +
+        getSleepHours('Thuesday') + getSleepHours('Wednesday') +
+        getSleepHours('Thursday') + getSleepHours('Friday') +
+        getSleepHours('Saturday') + getSleepHours('Sunday'))
+    return sum_of_all;
+}
+
+function getIdealSleepHours() {
+    let idealHours = 8
+    return idealHours * 7
+}
+
+const calculateSleepDebt = () => {
+    let actualSleepHours = getActualSleepHours()
+    let idealSleepHours = getIdealSleepHours()
+    if (actualSleepHours === idealSleepHours) {
+        return 'The User got perfect amount of sleep, you difirence: ' + (actualSleepHours - idealSleepHours)
+    } else if (actualSleepHours > idealSleepHours) {
+        return 'User got more sleep than needet, you difirence: ' + (actualSleepHours - idealSleepHours)
+    } else {
+        return 'User should get some rest, you difirence: ' + (actualSleepHours - idealSleepHours)
+    }
+}
+
+console.log('My Week sleep hours: ' + getActualSleepHours())
+console.log('My ideal sleep hours:' + getIdealSleepHours())
+console.log(calculateSleepDebt())
+</script>
+</body>
+</html>

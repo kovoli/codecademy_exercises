@@ -61,15 +61,53 @@
 
     function multiplyByNineFifths(number) {
       return number * (9/5);
-    };
+    }
 
     function getFahrenheit(celsius) {
       return multiplyByNineFifths(celsius) + 32;
-    };
+    }
 
     getFahrenheit(15); // Returns 59
 
-    //
+    // Function Expressions
+
+    const plantNeedsWater = function(day) {
+        if (day !== 'Wednesday') {
+            return false
+        } else {
+            return true
+        }
+    }
+
+    console.log(plantNeedsWater('Tuesday'))
+
+    // Arrow Functions
+
+    const rectangleArea = (width, height) => {
+      let area = width * height;
+      return area;
+    };
+    const plantNeedsWater = function(day) {
+      if (day === 'Wednesday') {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    // Concise Body Arrow Functions
+
+    const squareNum = (num) => {
+      return num * num;
+    };
+    // Wir können die Funktion umgestalten zu:
+    // One Parameter
+    const one = num => num * num;
+    // Zero Parameter
+    const zero = () => {};
+    // More parameter
+    const more = (a, b, c)=> {};
+
 
 </script>
 </body>
