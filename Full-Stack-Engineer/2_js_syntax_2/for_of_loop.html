@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+
+// Iterating Through an Array
+
+const hobbies = ['singing', 'eating', 'quidditch', 'writing'];
+
+for (const hobby of hobbies) {
+  document.write(`I enjoy ${hobby}.` + '<hr>');
+}
+
+// Iterating Through a String
+
+const username = 'joe';
+
+for (const char of username) {
+  document.write(char + '<hr>');
+}
+
+// Break and Continue
+
+const strangeBirds = ['Shoebill', 'Cockatrice', 'Basan', 'Terrorbird','Parotia','Kakapo'];
+
+for (const bird of strangeBirds) {
+  if (bird === 'Basan'){
+    break;
+  }
+  document.write(bird + '<hr>');
+}
+
+const strangeBirds1 = ['Shoebill', 'Cockatrice', 'Basan', 'Cow', 'Terrorbird', 'Parotia', 'Kakapo'];
+
+for (const bird of strangeBirds1) {
+  if  (bird === 'Cow'){
+    continue;
+  }
+  document.write(bird + '<hr>');
+}
+
+
+const pokemonList = ['Pikachu', 'Charizard', 'Squirtle', 'Yoshi', 'Snorlax'];
+
+</script>
+</body>
+</html>
