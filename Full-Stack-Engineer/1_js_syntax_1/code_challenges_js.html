@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+// Write your function here:
+
+const greetWorld = () => {
+  return 'Hello, World!'
+}
+
+// canIVote()
+
+function canIVote(age) {
+  if (age >= 18) {
+    return true
+  } else {
+    return false
+  }
+}
+console.log(canIVote(19))
+
+// agreeOrDisagree()
+
+function agreeOrDisagree(str1, str2) {
+  if (str1 === str2) {
+    return 'You agree!'
+  } else {
+    return 'You disagree!'
+  }
+}
+console.log(agreeOrDisagree("yep", "yep"))
+
+// lifePhase()
+function lifePhase(age) {
+    if (age > 0 && age <= 3) {
+        return 'baby'
+    } else if (age >= 3 && age <= 12) {
+        return 'child'
+    } else if (age >= 13 && age <= 19) {
+        return 'teen'
+    } else if (age >= 20 && age <= 64) {
+        return 'adult'
+    } else if (age >= 65 && age <= 140) {
+        return 'senior citizen'
+    } else {
+        return 'This is not supported valid age'
+    }
+}
+//document.write(lifePhase(-5))
+console.log(lifePhase(2))
+
+// finalGrade()
+
+const finalGrade = (midterm, final, homework) => {
+    if ((midterm < 0 || midterm > 100) || (final < 0 || final > 100) || (homework < 0 || homework > 100)) {
+        return 'You have entered an invalid grade.'
+    }
+    let average = (midterm + final + homework) / 3
+    if (average < 60) {
+        return 'F'
+    }
+    else if (average < 70) {
+        return 'D'
+    }
+    else if (average < 80) {
+        return 'C'
+    }
+    else if (average < 90) {
+        return 'B'
+    } else {
+        return 'A'
+    }
+}
+// document.write(finalGrade(100,100,100))
+
+// reportingForDuty()
+function reportingForDuty(rank, lastName) {
+    return `${rank} ${lastName} reporting for duty!`
+}
+
+
+const rollTheDice = () => {
+  // Math.random() gives us a random number from 0 up to, but not including, 1
+  // We multiplied that by 6 to get a number between 0 and up to, but not including, 6
+  // But since we actually wanted numbers from 1 to 6, inclusive, we added 1
+    let die1 = Math.floor(Math.random() * 6 + 1)
+    let die2 = Math.floor(Math.random() * 6 + 1)
+    return die1 + die2
+}
+// document.write(rollTheDice())
+function calculateWeight(earthWeight, planet) {
+    switch (planet) {
+        case 'Mercury':
+            return earthWeight * 0.378
+            break;
+        case 'Venus':
+            return earthWeight * 0.907
+            break;
+        case 'Mars':
+            return earthWeight * 0.377
+        break;
+        case 'Jupiter':
+            return earthWeight * 2.36
+            break;
+        case 'Saturn':
+            return earthWeight * 0.916
+        default:
+            return 'Invalid Planet Entry. Try: Mercury, Venus, Mars, Jupiter, or Saturn.'
+            break;
+    }
+}
+console.log(calculateWeight(100, 'Jupiter'))
+
+const truthyOrFalsy = value => {
+    if (value) {
+        return true
+    }
+    return false
+}
+
+// numImaginaryFriends()
+
+function numImaginaryFriends(num) {
+    let imaginary = Math.ceil(num * 0.25)
+    return imaginary
+}
+// document.write(numImaginaryFriends(21))
+
+// sillySentence()
+
+function sillySentence(adj,verb, noun) {
+    return `I am so ${adj} because I ${verb} coding! Time to write some more awesome ${noun}!`
+}
+
+// howOld()
+
+const howOld = (age, year) => {
+// The following two lines make it so that our function always knows the current year.
+    let dateToday = new Date();
+    let thisYear = dateToday.getFullYear();
+// It is totally ok if your function used the current year directly!
+
+    const yearDifference = year - thisYear
+    const newAge = age + yearDifference
+    if (newAge > age) {
+        return `You will be ${newAge} in the year ${year}`
+    } else if (newAge < 0) {
+        return `The year ${year} was ${-newAge} years before you were born`
+    } else {
+        return `You were ${newAge} in the year ${year}`
+    }
+}
+
+// tipCalculator()
+
+function tipCalculator(quality, total){
+    switch (quality) {
+        case 'bad':
+            return total * 0.05
+            break;
+        case 'ok':
+            return total * 0.15
+            break;
+        case 'good':
+            return total * 0.20
+            break;
+        case 'excellent':
+            return total * 0.30
+            break;
+        default:
+            return total * 0.18
+            break;
+    }
+}
+
+// toEmoticon()
+
+function toEmoticon(str) {
+    switch (str) {
+        case 'shrug':
+            return '|_{"}_|'
+        case 'smiley face':
+            return ':)'
+        case 'frowny face':
+            return ':('
+        case 'winky face':
+            return ';)'
+        case 'heart':
+            return '<3'
+        default:
+            return '|_(* ~ *)_|'
+            break;
+    }
+}
+</script>
+</body>
+</html>

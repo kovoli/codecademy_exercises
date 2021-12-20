@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+// The For Loop
+
+for (let counter = 0; counter < 4; counter++) {
+  document.write(counter + '<hr>');
+}
+
+// Looping in Reverse
+
+for (let counter = 5; counter >= 0; counter--) {
+  document.write(counter + '<hr>');
+}
+
+// Looping through Arrays
+
+const animals = ['Grizzly Bear', 'Sloth', 'Sea Lion'];
+for (let i = 0; i < animals.length; i++){
+  document.write(animals[i] + '<hr>');
+}
+
+// Nested Loops
+
+const myArray = [6, 19, 20];
+const yourArray = [19, 81, 2];
+for (let i = 0; i < myArray.length; i++) {
+  for (let j = 0; j < yourArray.length; j++) {
+    if (myArray[i] === yourArray[j]) {
+      console.log('Both loops have the number: ' + yourArray[j])
+    }
+  }
+}
+
+// The While Loop
+
+// A while loop that prints 1, 2, and 3
+
+let counterTwo = 1;
+while (counterTwo < 4) {
+  document.write(counterTwo);
+  counterTwo++;
+}
+const cards = ['diamond', 'spade', 'heart', 'club'];
+
+
+let currentCard
+
+while (currentCard !== 'spade') {
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  document.write(currentCard + '<hr>')
+}
+
+// Do...While-Anweisungen
+// Die Do .. While anweissung wird mindestens einmal ausgeführt
+const firstMessage = 'I will print!';
+const secondMessage = 'I will not print!';
+
+// A do while with a stopping condition that evaluates to false
+do {
+ document.write(firstMessage + '<hr>')
+} while (true === false);
+
+// A while loop with a stopping condition that evaluates to false
+while (true === false){
+  document.write(secondMessage + '<hr>')
+}
+
+// The break Keyword
+
+for (let i = 0; i < 99; i++) {
+  if (i > 2 ) {
+     break;
+  }
+  console.log('Banana.');
+}
+
+console.log('Orange you glad I broke out the loop!');
+
+</script>
+</body>
+</html>

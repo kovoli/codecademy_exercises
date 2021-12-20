@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+// Blöcke und Umfang
+
+const city = 'New York City';
+function logCitySkyline() {
+  let skyscraper = 'Empire State Building';
+  return 'The stars over the ' + skyscraper + ' in ' + city;
+}
+console.log(logCitySkyline())
+
+// Global Scope
+
+const color = 'blue';
+
+const returnSkyColor = () => {
+  return color; // blue
+};
+console.log(returnSkyColor()); // blue
+
+// Block Scope
+
+const logSkyColor = () => {
+  let color = 'blue';
+  console.log(color); // blue
+};
+
+logSkyColor(); // blue
+// console.log(color); // ReferenceError
+
+// Scope Pollution
+
+let num = 50;
+
+const logNum = () => {
+  num = 100; // Take note of this line of code
+  console.log(num);
+};
+
+logNum(); // Prints 100
+console.log(num); // Prints 100
+
+// Üben Sie gutes Scoping
+
+const logVisibleLightWaves = () => {
+  let lightWaves = 'Moonlight';
+	let region = 'The Arctic';
+  // Add if statement here:
+  if (region === 'The Arctic') {
+    let lightWaves = 'Northern Lights';
+    console.log(lightWaves);
+  }
+  console.log(lightWaves);
+};
+
+logVisibleLightWaves();
+
+</script>
+</body>
+</html>
