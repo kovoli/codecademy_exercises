@@ -141,7 +141,7 @@ console.log(spaceship10)
 
 // Looping Through Objects
 
-let spaceship = {
+let spaceship11 = {
     crew: {
         captain: {
             name: 'Lily',
@@ -166,6 +166,6 @@ let spaceship = {
 };
 
 // for...in
-for (let crewMember in spaceship.crew) {
-    console.log(`${crewMember}: ${spaceship.crew[crewMember].name}`);
+for (let crewMember in spaceship11.crew) {
+    console.log(`${crewMember}: ${spaceship11.crew[crewMember].name}`);
 }
