@@ -1,0 +1,35 @@
+Title of My Document
+====================
+
+
+Sub-Title of My Document
+------------------------
+
+
+# Title of My Document
+
+
+My Todo List
+============
+
+At the end of this **week**, I plan to: // Bold
+
+1. Learn Markdown
+2. Write Markdown
+3. Share a Markdown note
+
+My favorite quote is:
+> If you didn't get it the first time // > цитаты
+> Do not despair
+> Try and try again
+> ~ Anonymous
+------------------------------
+* Markdown
++ HTML
+- XML
+
+produces this:
+
+Markdown
+HTML
+XML

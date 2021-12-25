@@ -1,0 +1,25 @@
+body {
+    font-family: "Lucida Console", Courier, monospace;
+    background-image: url(cool-background.png);
+}
+h1, h2 {
+    text-align: center;
+}
+h1 {
+    text-decoration: underline;
+}
+table {
+    margin: 0 auto;
+}
+thead {
+    background-color: #bdbece;
+}
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+ul, li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
