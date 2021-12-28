@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+// Der folgende Code weist beispielsweise den inneren HTML-Code des body-Elements dem Text
+document.body.innerHTML = 'document.body.innerHTML ='
+
+// .querySelector()Methode ermöglicht es uns,
+// einen CSS-Selektor anzugeben und gibt dann das erste Element zurück, das diesem Selektor entspricht
+document.querySelector('p');
+
+// direkt über ihre auf Elemente zugreifen .getElementById()
+document.getElementById('bio').innerHTML = 'The description';
+
+// Style ein Element
+let blueElement = document.querySelector('.blue');
+blueElement.style.backgroundColor = 'blue';
+// Andere variante
+document.querySelector('.blue').style.fontFamily = 'Roboto';
+
+// Create and Insert Elements
+let paragraph = document.createElement('p');
+paragraph.id = 'info';
+paragraph.innerHTML = 'The text inside the paragraph';
+// Die .appendChild()Methode fügt ein untergeordnetes Element als letzten untergeordneten Knoten hinzu.
+document.body.appendChild(paragraph); //
+
+// Remove an Element
+let paragraph = document.querySelector('p');
+document.body.removeChild(paragraph);
+// Если вы хотите скрыть элемент, потому что его не нужно загружать изначально
+document.getElementById('sign').hidden = true;
+
+// Interactivity with onclick
+let element = document.getElementById('interact');
+element.onclick = function() { element.style.backgroundColor = 'blue' };
+
+</script>
+</body>
+</html>

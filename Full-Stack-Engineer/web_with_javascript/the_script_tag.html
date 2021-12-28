@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--  Das defer-Attribut gibt an, dass Skripts ausgeführt werden sollen,
+    nachdem die HTML-Datei vollständig geparst wurde.  -->
+    <script src="example.js" defer></script>
+    <!--  Das asyncAttribut lädt das Skript asynchron mit dem Rest der Webseite und führt es aus.   -->
+    <script src="example.js" async></script>
+    <!-- The src attribute -->
+    <script src="src/exampleScript.js"></script>
+
+</head>
+<body>
+<section class = "container">
+  	<img src="https://25ce8ce665a746bc853cb4e2b42d240c.cc-propeller.cloud/flower.png" id="myImage">
+  	    <p style="text-align: center" onclick="blooming()">Codecademy</p>
+	</section>
+
+
+<p style="text-align: center" id="logo" onclick="newStyle()">Codecademy</p>
+  <!-- Mit dem <script>Element können Sie JavaScript-Code in eine HTML-Datei einfügen.
+  Unten <script>bettet das Element gültigen JavaScript-Code ein:  -->
+      <script>
+        function blooming() {
+            let image = document.getElementById('myImage');
+            if (image.src.match("normal")) {
+                image.src = "flower.png";
+            } else {
+                image.src = "normal.png";
+            }
+        }
+      </script>
+</body>
+</html>
