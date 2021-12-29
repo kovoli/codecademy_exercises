@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&family=Shizuru&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Website-Design-System</title>
+</head>
+<body>
+<h1 id="main-h1">Website-Design-System by Examples</h1>
+<table>
+    <thead>
+        <tr>
+            <td colspan="4" id="colors"><h2>Colors</h2></td>
+            <script>
+                let color = document.getElementById('colors');
+                function changeColor() {
+                  const randomColor = Math.floor(Math.random()*16777215).toString(16);
+                  color.style.color = "#" + randomColor;
+                }
+                color.addEventListener('mouseover', changeColor);
+                changeColor();
+            </script>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Name</th>
+            <th>Properties</th>
+            <th>Values</th>
+            <th>Color</th>
+        </tr>
+        <tr>
+            <td>Hexadecimal</td>
+            <td rowspan="4">color:<br> background-color: </td>
+            <td>#41E1C4;</td>
+            <td id="hexa">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Keywords</td>
+            <td>RoyalBlue;</td>
+            <td id="keywords"></td>
+        </tr>
+        <tr>
+            <td>RGB model</td>
+            <td>rgb(157, 173, 45);</td>
+            <td id="rgb"></td>
+        </tr>
+        <tr>
+            <td>HSL model</td>
+            <td>hsla(338, 98%, 45%, 0.5);</td>
+            <td id="hsl"></td>
+        </tr>
+</tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <td colspan="4"><h2>Google Fonts</h2></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Name</th>
+            <th>Properties</th>
+            <th>Values</th>
+            <th>Font</th>
+        </tr>
+        <tr>
+            <td>Roboto</td>
+            <td rowspan="4">font-family:</td>
+            <td>font-family: 'Roboto', sans-serif;</td>
+            <td id="Roboto">An example of the font</td>
+        </tr>
+        <tr>
+            <td>Shizuru</td>
+            <td>font-family: 'Shizuru', cursive;</td>
+            <td id="Shizuru">An example of the font</td>
+        </tr>
+        <tr>
+            <td>Ubuntu</td>
+            <td>font-family: 'Ubuntu', sans-serif;</td>
+            <td id="Ubuntu">An example of the font</td>
+        </tr>
+</tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <td colspan="4"><h2>Text Styles</h2></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Name</th>
+            <th>Properties</th>
+            <th>Values</th>
+            <th>Font</th>
+        </tr>
+        <tr>
+            <td>Weight</td>
+            <td>font-weight:</td>
+            <td>normal:<br>
+                bold:<br>
+                lighter:<br>
+                bolder:
+            </td>
+            <td>
+                <span style="font-weight: normal;">An example of the font</span><br>
+                <span style="font-weight: bold;">An example of the font</span><br>
+                <span style="font-weight: lighter;">An example of the font</span><br>
+                <span style="font-weight: bolder;">An example of the font</span>
+            </td>
+        </tr>
+        <tr>
+            <td>Style</td>
+            <td>font-style:</td>
+            <td>
+                normal:<br>
+                italic:<br>
+                oblique:
+            </td>
+            <td>
+                <span style="font-style: normal;">An example of the font</span><br>
+                <span style="font-style: italic;">An example of the font</span><br>
+                <span style="font-style: oblique;">An example of the font</span><br>
+            </td>
+        </tr>
+        <tr>
+            <td>Size</td>
+            <td>font-size:</td>
+            <td>
+                small:<br>
+                medium:<br>
+                large:
+            </td>
+            <td>
+                <span style="font-size: small;">An example of the font</span><br>
+                <span style="font-size: medium;">An example of the font</span><br>
+                <span style="font-size: large;">An example of the font</span><br>
+            </td>
+        </tr>
+</tbody>
+</table>
+</body>
+</html>

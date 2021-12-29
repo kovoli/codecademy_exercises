@@ -1,0 +1,42 @@
+
+
+#main-h1 {
+    text-align: center;
+}
+thead {
+    text-align: center;
+    padding: 5px;
+}
+table, td, th{
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px
+}
+th {
+    padding: 6px;
+}
+#keywords {
+    background-color: royalblue;
+}
+#hexa {
+    background-color: #41E1C4;
+}
+#rgb {
+    background-color: rgb(157, 173, 45);
+}
+#hsl {
+    background-color: hsla(338, 98%, 45%, 0.5);
+}
+#Roboto {
+    font-family: 'Roboto', sans-serif;
+}
+#Shizuru {
+    font-family: 'Shizuru', cursive;
+}
+#Ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
